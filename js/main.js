@@ -52,13 +52,32 @@ animales.forEach(function (animales) {
 animales.forEach((animales) => {
     console.log('los animales con flecha son', animales)
 })
-//map
-let animalesDos = animales.map((animales) => animales + ' son animales' )
-    console.log(animalesDos)
-    console.log(animales)
-//find
-let encontrado = animales.find(animales=>animales == 'loros');
+
+
+//map-------------
+let animalesDos = animales.map((animales) => animales + ' son animales')
+console.log(animalesDos)
+console.log(animales)
+
+
+//find--------------
+let encontrado = animales.find(animales => animales == 'loros');
 console.log(encontrado)
 
 
+//filtro----
+let filtro = animales.filter((animal) => {
+    return animal.length > 5
+})
+console.log(filtro, 'tienen mas de 5 letras')
+
+
+//for of
+for (let animalDos of animales){
+    if (animalDos.length <= 5){
+        console.log(animalDos + ' tiene 5 o menos letras')
+    } else {
+        console.log(animalDos + ' tienen mas de 5 letras')
+    }
+}
 

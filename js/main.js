@@ -30,6 +30,7 @@ for(i=0 ; i<= 5; i++){
 
 */
 animales.push('toros');
+animales.push(prompt("ingrese un animal"))
 //               | aca recorre el array hasta llegar a su largo maxim v
 for (let i = 0; i < animales.length; i++) {
     let animal = animales[i];
@@ -41,8 +42,8 @@ console.log(animales.length)
 /* for(k=1; k<3 ; k++){
     let nombre = prompt('ingrese nombre')
     alert('señor ' + nombre + ' tiene el turno numero '+ k)
-} */
-
+} 
+*/
 
 //aca la llave va dentro del parentesis
 animales.forEach(function (animales) {
